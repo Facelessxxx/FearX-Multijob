@@ -1,0 +1,33 @@
+html, body { width: 100%; height: 100%; background-color: rgba(0,0,0,0) !important; background: none !important }
+body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; overflow: hidden }
+.nui-transparent, #nui-root { position: fixed; inset: 0; background-color: rgba(0,0,0,0) !important; background: none !important; pointer-events: none }
+#job-menu-container { pointer-events: auto }
+.menu-panel { background: rgba(31,41,55,0.88); border: 1px solid rgba(255,255,255,0.12); transition: background 0.3s ease, color 0.3s ease }
+.theme-light { background: rgba(249,250,251,0.8); color: #1f2937 }
+.theme-light .header-border { border-color: rgba(0,0,0,0.1) }
+.theme-light .job-item, .theme-light .quit-btn { background-color: rgba(0,0,0,0.05) }
+.theme-light .job-item:hover { background-color: rgba(59,130,246,0.15) }
+.theme-light .quit-btn:hover { background-color: rgba(239,68,68,0.15) }
+.theme-light .credit-text { color: #6b7280 }
+.theme-light .header-icon { color: #3b82f6 }
+.theme-dark { background: rgba(31,41,55,0.8); color: #f9fafb }
+.theme-dark .header-border { border-color: rgba(255,255,255,0.1) }
+.theme-dark .job-item, .theme-dark .quit-btn { background-color: rgba(255,255,255,0.05) }
+.theme-dark .job-item:hover { background-color: rgba(59,130,246,0.3) }
+.theme-dark .quit-btn:hover { background-color: rgba(239,68,68,0.4) }
+.theme-dark .credit-text { color: #9ca3af }
+.theme-dark .header-icon { color: #60a5fa }
+.theme-blue { background: rgba(30,64,175,0.8); color: #f9fafb }
+.theme-blue .header-border { border-color: rgba(255,255,255,0.2) }
+.theme-blue .job-item, .theme-blue .quit-btn { background-color: rgba(255,255,255,0.1) }
+.theme-blue .job-item:hover { background-color: rgba(147,197,253,0.3) }
+.theme-blue .quit-btn:hover { background-color: rgba(251,113,133,0.5) }
+.theme-blue .credit-text { color: #dbeafe }
+.theme-blue .header-icon { color: #bfdbfe }
+#job-menu-container { transform: translateY(120%); transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) }
+#job-menu-container.open { transform: translateY(0) }
+.job-item-wrapper { opacity: 0; transform: translateX(20px); transition: opacity 0.3s ease, transform 0.3s ease }
+.job-item, .quit-btn { transition: all 0.25s ease-in-out }
+.job-item:hover, .quit-btn:hover { transform: scale(1.03) }
+.theme-btn { width: 20px; height: 20px; border-radius: 9999px; cursor: pointer; border: 2px solid rgba(255,255,255,0.5); transition: transform 0.2s }
+.theme-btn:hover { transform: scale(1.1) }

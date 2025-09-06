@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveM Job Selector</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>html,body{width:100%;height:100%;background:none!important;background-color:transparent!important}</style>
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: blob: 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://fonts.googleapis.com https://fonts.gstatic.com; connect-src 'self' https://* data: blob:; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com">
+</head>
+<body class="overflow-hidden">
+
+    <div id="nui-root">
+    <div id="job-menu-container" class="fixed bottom-6 right-6 w-80">
+        <div id="menu-panel" class="menu-panel rounded-xl shadow-2xl p-4 flex flex-col space-y-3">
+            <div class="flex items-center space-x-3 pb-3 header-border">
+                <svg class="header-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"></path><path d="m3.3 7 8.7 5 8.7-5"></path><path d="M12 22V12"></path></svg>
+                <h2 id="header-title" class="font-bold text-lg">limit multijob</h2>
+            </div>
+            
+            <div id="job-list" class="flex flex-col pt-2 space-y-2"></div>
+            
+            <div class="flex justify-between items-center pt-2">
+                <div class="text-xs credit-text">
+                    made by fearx dev
+                </div>
+                 <div id="theme-switcher" class="flex items-center space-x-2">
+                    <button class="theme-btn bg-gray-200" data-theme="light"></button>
+                    <button class="theme-btn bg-gray-800" data-theme="dark"></button>
+                    <button class="theme-btn bg-blue-700" data-theme="blue"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
